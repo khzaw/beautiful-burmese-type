@@ -1,0 +1,12 @@
+# Site settings
+title: Beautiful Burmese Typography
+email: emoosx@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Beautiful Burmese Typography
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: khzaw
+github_username:  emoosx
+
+# Build settings
+markdown: kramdown
