@@ -3,8 +3,6 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
 $base-font-family: "helvetica neue", helvetica, arial, sans-serif;
 $base-font-size:   16px;
@@ -21,8 +19,8 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-// Width of the content area
 $content-width:    800px;
+$content-height:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -50,7 +48,8 @@ $footer-color: #555;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "reset",
         "base",
-        "layout"
+        "layout",
+        "fonts"
 ;
 
 body {
@@ -62,9 +61,7 @@ a {
   text-decoration: none;
 }
 
-footer {
-  padding: 50px;
-  text-align: center;
+footer { padding: 50px; text-align: center;
 
   p {
     color: $footer-color;
@@ -86,11 +83,62 @@ footer {
 }
 
 .page {
+  &.title {
+    background: #fff;
+    padding: 125px 0 250px 0;
+    }
+    
   &#poem-1 {
+    background: #2A2C39;
+    padding: 250px 0;
+
+    .text {
+      margin: 0 auto;
+      padding: 0 20px;
+      font-family: 'MyanmarSansPro', serif;
+      width: $content-width;
+
+      h3 {
+        color: #e9e9eb;
+        font-size: 36px;
+        line-height: 1.4;
+        margin: 0 0 20px 0;
+        text-align: left;
+        text-indent: -10px;
+      }
+
+      p {
+        color: #e9e9eb;
+      }
+    }
+
   }
 
   &#poem-2 {
-  }
+    background: #ffffff;
+    padding: 250px 0;
+    .text {
+      font-family: Yunghkio, 'serif';
+      width: $content-width;
+      text-align: right;
+      margin: 0 auto;
+      h3 {
+        color: #CC3311;
+        font-size: 36px;
+        line-height: 1.4;
+        margin: 0 0 20px 0;
+        text-indent: -10px;
+      }
+
+      p {
+        color: #333;
+        font-style: italic;
+        margin: 0 0 10px 0;
+        text-indent: -6px;
+        line-height: 30px;
+      }
+    }
+ }
 
   &#poem-3 {
   }

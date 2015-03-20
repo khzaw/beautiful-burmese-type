@@ -1,0 +1,22 @@
+
+@mixin font-face($style-name, $file, $family, $category:"") {
+    $filepath: "../fonts/" + $family + "/" + $file;
+    @font-face {
+        font-family: "#{$style-name}";
+        src: url($filepath + ".woff") format('woff'),
+             url($filepath + ".ttf")  format('truetype');
+    }
+    %#{$style-name} {
+        font: {
+            @if $category != "" {
+                family: "#{$style-name}", #{$category};
+            }
+            @else {
+                family: "#{$style-name}";
+                weight: normal;
+            }
+        }
+    }
+}
+
+@include font-face('MyanmarSansPro', 'MyanmarSansPro', 'MyanmarSansPro', 'serif');
