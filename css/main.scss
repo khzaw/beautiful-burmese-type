@@ -122,7 +122,6 @@ footer { padding: 50px; text-align: center;
       background: #000;
       padding: 125px 180px;
       .text {
-          font-family: 'Masterpiece Sans Uni', Serif;
           width: $content-width;
           text-align: center;
           margin: 0 auto;
@@ -130,16 +129,16 @@ footer { padding: 50px; text-align: center;
 
           h3 {
               color: #fff;
-              font-size: 92px;
+              font-size: 68px;
               line-height: 1.6;
-              margn: 0 0 20px 0;
-              text-indent: -10px;
+              margin: 0 0 30px 0;
+              font-family: 'Myanmar Pauklay', serif;
               
           }
 
           p {
               color: #fff;
-              line-height: 1.8;
+              font: 400 20px/1.8 'padauk';
               text-align: justify;
           }
       }
