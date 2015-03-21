@@ -164,6 +164,50 @@ footer { padding: 50px; text-align: center;
       }
     }
 
+  &#byu {
+    background: #fff;
+    padding: 100px 0;
+
+    .text {
+      margin: 0 auto;
+      padding: 0 20px;
+      width: $content-width;
+
+      h2 {
+          color: #222;
+          font: 400 64px/64px 'Noto Sans Myanmar';
+          margin: 0 0 32px 0;
+          text-align: center;
+          width: $content-width;
+          }
+
+      h3 {
+        color: #222;
+        margin: 0 0 20px 0;
+        text-align: center;
+
+        span {
+          background: #ef4723;
+          padding: 0 20px;
+         // padding: 0 20px;
+          }
+        }
+
+      h3+* {
+        }
+
+      .excerpt {
+        -moz-column-count: 2;
+        -moz-column-gap: 50px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 50px;
+        p {
+          line-height: 1.9;
+          }
+        }
+      }
+    }
+
   &#poem-2 {
     background: #ffffff;
     padding: 250px 0;
