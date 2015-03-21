@@ -19,15 +19,20 @@
     <link rel="stylesheet" href='http://mmwebfonts.comquas.com/fonts/?font=oursunicode' />
     <link rel="stylesheet" href='http://mmwebfonts.comquas.com/fonts/?font=padauk' />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <script src="{{ "js/jquery.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "js/jquery.mymr.js" | prepend: site.baseurl }}"></script>
   </head>
 
   <body>
     <section id="container">
       {{ content }}
-      {% include footer.html %}
     </section>
 
 
+    {% include footer.html %}
+    <script>
+      $('container').find('p').mymrSyllBreak('my');
+    </script>
   </body>
 
 </html>

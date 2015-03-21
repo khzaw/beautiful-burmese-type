@@ -53,6 +53,7 @@ $footer-color: #555;
 ;
 
 body {
+  background: #eaeaea;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -95,24 +96,74 @@ footer { padding: 50px; text-align: center;
     .text {
       margin: 0 auto;
       padding: 0 20px;
-      font-family: 'MyanmarSansPro', serif;
+      font-family: 'Myanmar Sans Pro', serif;
       width: $content-width;
 
       h3 {
         color: #e9e9eb;
-        font-size: 36px;
-        line-height: 1.4;
-        margin: 0 0 20px 0;
+        font-size: 56px;
+        line-height: 1.6;
+        margin: 0 0 40px 0;
         text-align: left;
         text-indent: -10px;
       }
 
       p {
         color: #e9e9eb;
+        font-size: 36px;
+        line-height: 2.0;
+
       }
     }
 
   }
+
+  &#equal-rights {
+      background: #000;
+      padding: 125px 180px;
+      .text {
+          font-family: 'Masterpiece Sans Uni', Serif;
+          width: $content-width;
+          text-align: center;
+          margin: 0 auto;
+          padding: 0 20px;
+
+          h3 {
+              color: #fff;
+              font-size: 92px;
+              line-height: 1.6;
+              margn: 0 0 20px 0;
+              text-indent: -10px;
+              
+          }
+
+          p {
+              color: #fff;
+              line-height: 1.8;
+              text-align: justify;
+          }
+      }
+      
+  }
+
+  &#sai-sai {
+    background: #000;
+    padding: 300px 0;
+
+    .text {
+      width: $content-width;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0 20px;
+
+      p {
+        font: 300 84px/1.8 'Noto Sans Myanmar';
+        color: #fff;
+        margin: 0 0 20px 0;
+        text-indent: -10px;
+        }
+      }
+    }
 
   &#poem-2 {
     background: #ffffff;
