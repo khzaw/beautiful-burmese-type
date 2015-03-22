@@ -52,6 +52,18 @@ $footer-color: #555;
         "fonts"
 ;
 
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  }
+
+html, body, * {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "clig" 1;
+  -ms-font-feature-settings: "kern" 1, "liga" 1, "clig" 1, "locl";
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "clig" 1;
+  font-feature-settings: "kern" 1, "liga" 1, "clig" 1, "locl";
+  }
+
 body {
   background: #eaeaea;
   -webkit-text-size-adjust: 100%;
@@ -97,7 +109,7 @@ footer { padding: 50px; text-align: center;
       margin: 0 auto;
       padding: 0 20px;
       font-family: 'Myanmar Sans Pro', serif;
-      width: $content-width;
+      max-width: $content-width;
 
       h3 {
         color: #e9e9eb;
@@ -122,7 +134,7 @@ footer { padding: 50px; text-align: center;
       background: #000;
       padding: 125px 180px;
       .text {
-          width: $content-width;
+          max-width: $content-width;
           text-align: center;
           margin: 0 auto;
           padding: 0 20px;
@@ -150,7 +162,7 @@ footer { padding: 50px; text-align: center;
     padding: 300px 0;
 
     .text {
-      width: $content-width;
+      max-width: $content-width;
       text-align: center;
       margin: 0 auto;
       padding: 0 20px;
@@ -171,7 +183,7 @@ footer { padding: 50px; text-align: center;
     .text {
       margin: 0 auto;
       padding: 0 20px;
-      width: $content-width;
+      max-width: $content-width;
       font: 400 18px/1.9 'Yunghkio';
       position: relative;
 
@@ -180,7 +192,7 @@ footer { padding: 50px; text-align: center;
           font: 400 64px/64px 'Myanmar Kuttar';
           margin: 0 0 32px 0;
           text-align: center;
-          width: $content-width;
+          max-width: $content-width;
 
           .author {
             font: lighter 44px/1 'Noto Sans Myanmar';
@@ -220,7 +232,7 @@ footer { padding: 50px; text-align: center;
     padding: 250px 0;
     .text {
       font-family: Yunghkio, 'serif';
-      width: $content-width;
+      max-width: $content-width;
       text-align: right;
       margin: 0 auto;
       h3 {
@@ -242,18 +254,18 @@ footer { padding: 50px; text-align: center;
  }
 
   &#akwyin-mashi {
-    background: #0ac5f4;
+    background: #4e081b;
     padding: 200px 0;
 
     .text {
       margin: 0 auto;
       padding: 0 20px;
       text-align: left;
-      width: $content-width;
+      max-width: $content-width;
 
       li {
         color: #fff;
-        font: 100 92px/1.5 'Pyidaungsu';
+        font: 100 84px/1.6 'ThanLwin';
 
         &:nth-child(1) {
           opacity: 0.3;
@@ -281,6 +293,25 @@ footer { padding: 50px; text-align: center;
   }
 
   &#poem-4 {
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url('../img/rain.jpg');
+    padding: 200px 0;
+    background-size: cover;
+
+
+    .text {
+      color: #efeaff;
+      text-align: right;
+      max-width: $content-width;
+      margin: 0 auto;
+      font: 30px 'Myanmar Pauklay';
+      text-shadow: 0 1px 0 black;
+      letter-spacing: 0.5px;
+      margin-right: 10%;
+      }
   }
 
   &#poem-5 {
