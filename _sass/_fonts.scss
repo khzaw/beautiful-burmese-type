@@ -19,6 +19,17 @@
     }
 }
 
+@include font-face('Masterpiece Uni Sans', 'MasterpieceUniSans', 'MasterpieceUniSans', 'serif');
 @include font-face('Myanmar Sans Pro', 'MyanmarSansProRegular', 'MyanmarSansProRegular', 'serif');
-@include font-face('Noto Sans Myanmar', 'NotoSansMyanmarRegular', 'NotoSansMyanmarRegular', 'serif');
 @include font-face('Myanmar Pauklay', 'MyanmarPauklay', 'MyanmarPauklay', 'serif');
+@include font-face('Myanmar Kuttar', 'MyanmarKuttar', 'MyanmarKuttar', 'serif');
+@include font-face('Myanmar Yinmar', 'MyanmarYinmar', 'MyanmarYinmar', 'serif');
+@include font-face('Myanmar Pixel', 'MyanmarPixel', 'MyanmarPixel', 'serif');
+@include font-face('Myanmar Pixel Smooth', 'MyanmarPixelSmooth', 'MyanmarPixelSmooth', 'serif');
+@include font-face('Myanmar Ponenyet', 'MyanmarPonenyet', 'MyanmarPonenyet', 'serif');
+@include font-face('Myanmar Square', 'MyanmarSquare', 'MyanmarSquare', 'serif');
+@include font-face('Myanmar Square Light', 'MyanmarSquareLight', 'MyanmarSquareLight', 'serif');
+@include font-face('Myanmar Sangam MN', 'MyanmarSangamMN', 'MyanmarSangamMN', 'serif');
+@include font-face('Myanmar MN', 'MyanmarMN', 'MyanmarMN', 'serif');
+@include font-face('Pyidaungsu', 'Pyidaungsu', 'Pyidaungsu', 'serif');
+@include font-face('Noto Sans Myanmar', 'NotoSansMyanmarRegular', 'NotoSansMyanmarRegular', 'serif');
