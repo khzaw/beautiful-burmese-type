@@ -130,6 +130,37 @@ footer { padding: 50px; text-align: center;
 
   }
 
+  &#nyan-g-shin {
+    background: #ef4723;
+    padding: 0 0 200px 0;
+
+    .text {
+      max-width: $content-width;
+      margin: 0 auto;
+      font: 400 28px/1.7 'Myanmar Square Light';
+      color: #222;
+
+      h1 {
+        float: left;
+        padding: 200px 25px 0 0;
+        margin: 0 0px 0 0;
+        max-width: 240px;
+        text-align: right;
+        }
+
+      h2 {
+        border-left:8px solid #242526;
+        float: left;
+        padding: 200px 0 0 25px;
+        max-width: auto;
+        }
+      p {
+        clear: left;
+        font-style: normal;
+        margin: 0 0 0 250px;
+        }
+      }
+    }
   &#equal-rights {
       background: #000;
       padding: 125px 180px;
@@ -182,22 +213,22 @@ footer { padding: 50px; text-align: center;
 
     .text {
       margin: 0 auto;
-      padding: 0 20px;
+      padding: 0 18px;
       max-width: $content-width;
-      font: 400 18px/1.9 'Yunghkio';
+      font: 400 21px/1.9 'CharisSIL';
       position: relative;
 
       h2 {
           color: #222;
-          font: 400 64px/64px 'Myanmar Kuttar';
-          margin: 0 0 32px 0;
+          font: 400 60px/1.1 'Myanmar Kuttar';
+          margin: 0 0 36px 0;
           text-align: center;
           max-width: $content-width;
 
           .author {
-            font: lighter 44px/1 'Noto Sans Myanmar';
+            font: lighter 48px/1 'CharisSIL';
             position: relative;
-            top: -25px;
+            top: -36px;
             }
           }
 
@@ -210,7 +241,7 @@ footer { padding: 50px; text-align: center;
         span {
           font-family: 'Noto Sans Myanmar';
           background: #fff;
-          padding: 0 20px;
+          padding: 0 16px;
           position: relative;
           top: -15px;
           }
@@ -222,6 +253,7 @@ footer { padding: 50px; text-align: center;
         -webkit-column-count: 2;
         -webkit-column-gap: 50px;
         p {
+          
           }
         }
       }
@@ -231,13 +263,13 @@ footer { padding: 50px; text-align: center;
     background: #ffffff;
     padding: 250px 0;
     .text {
-      font-family: Yunghkio, 'serif';
       max-width: $content-width;
       text-align: right;
       margin: 0 auto;
       h3 {
+        font-family: 'Myanmar Njaun';
         color: #CC3311;
-        font-size: 36px;
+        font-size: 84px;
         line-height: 1.4;
         margin: 0 0 20px 0;
         text-indent: -10px;
@@ -245,10 +277,11 @@ footer { padding: 50px; text-align: center;
 
       p {
         color: #333;
-        font-style: italic;
         margin: 0 0 10px 0;
-        text-indent: -6px;
-        line-height: 30px;
+        line-height: 2;
+        font: 36px/2 'Myanmar Sabae';
+        letter-spacing: 1px;
+        //text-indent: -6px;
       }
     }
  }
@@ -307,13 +340,36 @@ footer { padding: 50px; text-align: center;
       text-align: right;
       max-width: $content-width;
       margin: 0 auto;
-      font: 30px 'Myanmar Pauklay';
-      text-shadow: 0 1px 0 black;
-      letter-spacing: 0.5px;
+      font: 36px/1.8 'Myanmar Njaun';
       margin-right: 10%;
       }
   }
 
   &#poem-5 {
   }
+
+  &#j-me {
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url('../img/cloud.jpg');
+    padding: 200px 0;
+    background-size: cover;
+
+    .text {
+      color: #efeaff;
+      max-width: $content-width;
+      margin: 0 auto;
+      font: 60px 'Myanmar Njaun';
+      text-align: center;
+      line-height: 1.9;
+
+      span {
+        // font: 50px 'Ours-Unicode';
+        }
+      
+      }
+    
+    }
 }

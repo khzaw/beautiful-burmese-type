@@ -6,33 +6,55 @@
         src: url($filepath + ".woff") format('woff'),
              url($filepath + ".ttf")  format('truetype');
     }
-    %#{$style-name} {
-        font: {
-            @if $category != "" {
-                family: "#{$style-name}", #{$category};
-            }
-            @else {
-                family: "#{$style-name}";
-                weight: normal;
-            }
-        }
-    }
+}
+
+@font-face {
+  font-family: CharisSILW;
+  src: url('CharisSIL/CharisSIL-R.woff');
+}
+
+@font-face {
+  font-family: CharisSILW;
+  font-style: italic;
+  src: url('CharisSIL/CharisSIL-I.woff');
+}
+
+@font-face {
+    font-family: CharisSILW;
+    font-weight: bold;
+    src: url('CharisSIL/CharisSIL-B.woff');
+}
+
+@font-face {
+    font-family: CharisSILW;
+    font-weight: bold;
+    font-style: italic;
+    src: url('CharisSIL/CharisSIL-BI.woff');
 }
 
 @include font-face('Masterpiece Uni Sans', 'MasterpieceUniSans', 'MasterpieceUniSans', 'serif');
-@include font-face('Myanmar Sans Pro', 'MyanmarSansProRegular', 'MyanmarSansProRegular', 'serif');
-@include font-face('Myanmar Pauklay', 'MyanmarPauklay', 'MyanmarPauklay', 'serif');
+@include font-face('MON3 Anonta', 'MON3Anonta1', 'MON3Anonta1', 'serif');
+@include font-face('Myanmar Angoun', 'MyanmarAngoun', 'MyanmarAngoun', 'serif');
+@include font-face('Myanmar Census', 'MyanmarCensus', 'MyanmarCensus', 'serif');
+@include font-face('Myanmar Gantgaw', 'MyanmarGantgaw', 'MyanmarGantgaw', 'serif');
+@include font-face('Myanmar Khyay', 'MyanmarKhyay', 'MyanmarKhyay', 'serif');
 @include font-face('Myanmar Kuttar', 'MyanmarKuttar', 'MyanmarKuttar', 'serif');
-@include font-face('Myanmar Yinmar', 'MyanmarYinmar', 'MyanmarYinmar', 'serif');
+@include font-face('Myanmar MN', 'MyanmarMN', 'MyanmarMN', 'serif');
+@include font-face('Myanmar Njaun', 'MyanmarNjaun', 'MyanmarNjaun', 'serif');
 @include font-face('Myanmar Pixel', 'MyanmarPixel', 'MyanmarPixel', 'serif');
 @include font-face('Myanmar Pixel Smooth', 'MyanmarPixelSmooth', 'MyanmarPixelSmooth', 'serif');
 @include font-face('Myanmar Ponenyet', 'MyanmarPonenyet', 'MyanmarPonenyet', 'serif');
+@include font-face('Myanmar Sabae', 'MyanmarSabae', 'MyanmarSabae', 'serif');
 @include font-face('Myanmar Square', 'MyanmarSquare', 'MyanmarSquare', 'serif');
 @include font-face('Myanmar Square Light', 'MyanmarSquareLight', 'MyanmarSquareLight', 'serif');
 @include font-face('Myanmar Sangam MN', 'MyanmarSangamMN', 'MyanmarSangamMN', 'serif');
-@include font-face('Myanmar MN', 'MyanmarMN', 'MyanmarMN', 'serif');
+@include font-face('Myanmar Sans Pro', 'MyanmarSansProRegular', 'MyanmarSansProRegular', 'serif');
+@include font-face('Myanmar Pauklay', 'MyanmarPauklay', 'MyanmarPauklay', 'serif');
+@include font-face('Myanmar Yinmar', 'MyanmarYinmar', 'MyanmarYinmar', 'serif');
+@include font-face('MyMyanmar Universal', 'MyMyanmarUniversal', 'MyMyanmarUniversal', 'serif');
 @include font-face('Pyidaungsu', 'Pyidaungsu', 'Pyidaungsu', 'serif');
 @include font-face('Noto Sans Myanmar', 'NotoSansMyanmarRegular', 'NotoSansMyanmarRegular', 'serif');
+@include font-face('Ours-Unicode', 'Ours-Unicode', 'Ours-Unicode', 'serif');
 @include font-face('Tharlon', 'Tharlon', 'Tharlon', 'serif');
 @include font-face('ThanLwin', 'ThanLwin', 'ThanLwin', 'serif');
 @include font-face('ThanLwin Fixed', 'ThanLwin Fixed', 'ThanLwin Fixed', 'serif');
