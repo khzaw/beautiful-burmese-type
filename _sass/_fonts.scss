@@ -9,27 +9,27 @@
 }
 
 @font-face {
-  font-family: CharisSILW;
-  src: url('CharisSIL/CharisSIL-R.woff');
+  font-family: CharisSIL;
+  src: url('../fonts/CharisSIL/CharisSIL-R.woff');
 }
 
 @font-face {
-  font-family: CharisSILW;
+  font-family: CharisSIL;
   font-style: italic;
-  src: url('CharisSIL/CharisSIL-I.woff');
+  src: url('../fonts/CharisSIL/CharisSIL-I.woff');
 }
 
 @font-face {
-    font-family: CharisSILW;
+    font-family: CharisSIL;
     font-weight: bold;
-    src: url('CharisSIL/CharisSIL-B.woff');
+    src: url('../fonts/CharisSIL/CharisSIL-B.woff');
 }
 
 @font-face {
-    font-family: CharisSILW;
+    font-family: CharisSIL;
     font-weight: bold;
     font-style: italic;
-    src: url('CharisSIL/CharisSIL-BI.woff');
+    src: url('../fonts/CharisSIL/CharisSIL-BI.woff');
 }
 
 @include font-face('Masterpiece Uni Sans', 'MasterpieceUniSans', 'MasterpieceUniSans', 'serif');

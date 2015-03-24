@@ -215,7 +215,7 @@ footer { padding: 50px; text-align: center;
       margin: 0 auto;
       padding: 0 18px;
       max-width: $content-width;
-      font: 400 21px/1.9 'CharisSIL';
+      font: 400 18px/1.9 'Ours-Unicode';
       position: relative;
 
       h2 {
@@ -226,7 +226,7 @@ footer { padding: 50px; text-align: center;
           max-width: $content-width;
 
           .author {
-            font: lighter 48px/1 'CharisSIL';
+            font: lighter 56px/1 'Myanmar Gantgaw';
             position: relative;
             top: -36px;
             }
@@ -239,11 +239,12 @@ footer { padding: 50px; text-align: center;
         text-align: center;
 
         span {
-          font-family: 'Noto Sans Myanmar';
+          font-family: 'Myanmar Gantgaw';
           background: #fff;
           padding: 0 16px;
           position: relative;
           top: -15px;
+          letter-spacing: 3px;
           }
         }
 
