@@ -100,7 +100,7 @@ footer { padding: 50px; text-align: center;
     background: #fff;
     padding: 125px 0 250px 0;
     }
-    
+
   &#poem-1 {
     background: #2A2C39;
     padding: 250px 0;
@@ -128,64 +128,6 @@ footer { padding: 50px; text-align: center;
       }
     }
 
-  }
-
-  &#nyan-g-shin {
-    background: #ef4723;
-    padding: 0 0 200px 0;
-
-    .text {
-      max-width: $content-width;
-      margin: 0 auto;
-      font: 400 28px/1.7 'Myanmar Square Light';
-      color: #222;
-
-      h1 {
-        float: left;
-        padding: 200px 25px 0 0;
-        margin: 0 0px 0 0;
-        max-width: 240px;
-        text-align: right;
-        }
-
-      h2 {
-        border-left:8px solid #242526;
-        float: left;
-        padding: 200px 0 0 25px;
-        max-width: auto;
-        }
-      p {
-        clear: left;
-        font-style: normal;
-        margin: 0 0 0 250px;
-        }
-      }
-    }
-  &#equal-rights {
-      background: #000;
-      padding: 125px 180px;
-      .text {
-          max-width: $content-width;
-          text-align: center;
-          margin: 0 auto;
-          padding: 0 20px;
-
-          h3 {
-              color: #fff;
-              font-size: 68px;
-              line-height: 1.6;
-              margin: 0 0 30px 0;
-              font-family: 'Myanmar Pauklay', serif;
-              
-          }
-
-          p {
-              color: #fff;
-              font: 400 20px/1.8 'padauk';
-              text-align: justify;
-          }
-      }
-      
   }
 
   &#sai-sai {
@@ -260,6 +202,64 @@ footer { padding: 50px; text-align: center;
       }
     }
 
+  &#nyan-g-shin {
+    background: #ef4723;
+    padding: 0 0 200px 0;
+
+    .text {
+      max-width: $content-width;
+      margin: 0 auto;
+      font: 400 28px/1.7 'Myanmar Square Light';
+      color: #222;
+
+      h1 {
+        float: left;
+        padding: 200px 25px 0 0;
+        margin: 0 0px 0 0;
+        max-width: 240px;
+        text-align: right;
+        }
+
+      h2 {
+        border-left:8px solid #242526;
+        float: left;
+        padding: 200px 0 0 25px;
+        max-width: auto;
+        }
+      p {
+        clear: left;
+        font-style: normal;
+        margin: 0 0 0 250px;
+        }
+      }
+    }
+
+  &#poem-3 {
+  }
+
+  &#j-me {
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url('../img/cloud.jpg');
+    padding: 200px 0;
+    background-size: cover;
+
+    .text {
+      color: #efeaff;
+      max-width: $content-width;
+      margin: 0 auto;
+      font: 60px 'Myanmar Njaun';
+      text-align: center;
+      line-height: 1.9;
+
+      span {
+        // font: 50px 'Ours-Unicode';
+        }
+      }
+    }
+
   &#poem-2 {
     background: #ffffff;
     padding: 250px 0;
@@ -323,9 +323,6 @@ footer { padding: 50px; text-align: center;
 }
     }
 
-  &#poem-3 {
-  }
-
   &#poem-4 {
     background-image: linear-gradient(
     rgba(0, 0, 0, 0.5),
@@ -346,31 +343,35 @@ footer { padding: 50px; text-align: center;
       }
   }
 
+  &#equal-rights {
+      background: #000;
+      padding: 125px 180px;
+      .text {
+          max-width: $content-width;
+          text-align: center;
+          margin: 0 auto;
+          padding: 0 20px;
+
+          h3 {
+              color: #fff;
+              font-size: 68px;
+              line-height: 1.6;
+              margin: 0 0 30px 0;
+              font-family: 'Myanmar Pauklay', serif;
+              
+          }
+
+          p {
+              color: #fff;
+              font: 400 20px/1.8 'padauk';
+              text-align: justify;
+          }
+      }
+      
+  }
+
+
   &#poem-5 {
   }
 
-  &#j-me {
-    background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-    ),
-    url('../img/cloud.jpg');
-    padding: 200px 0;
-    background-size: cover;
-
-    .text {
-      color: #efeaff;
-      max-width: $content-width;
-      margin: 0 auto;
-      font: 60px 'Myanmar Njaun';
-      text-align: center;
-      line-height: 1.9;
-
-      span {
-        // font: 50px 'Ours-Unicode';
-        }
-      
-      }
-    
-    }
 }
