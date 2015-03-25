@@ -40,7 +40,9 @@
 @include font-face('Myanmar Pauklay', 'MyanmarPauklay', 'MyanmarPauklay');
 @include font-face('Myanmar Yinmar', 'MyanmarYinmar', 'MyanmarYinmar');
 @include font-face('MyMyanmar Universal', 'MyMyanmarUniversal', 'MyMyanmarUniversal');
-@include font-face('Pyidaungsu', 'Pyidaungsu', 'Pyidaungsu', 'serif');
+@include font-face('Padauk', 'Padauk', 'Padauk');
+@include font-face('Padauk', 'Padauk-Bold', 'Padauk', 'bold');
+@include font-face('Pyidaungsu', 'Pyidaungsu', 'Pyidaungsu');
 @include font-face('Noto Sans Myanmar', 'NotoSansMyanmar-Regular', 'NotoSansMyanmar');
 @include font-face('Noto Sans Myanmar', 'NotoSansMyanmar-Bold', 'NotoSansMyanmar', 'bold');
 @include font-face('Ours-Unicode', 'Ours-Unicode', 'Ours-Unicode');
