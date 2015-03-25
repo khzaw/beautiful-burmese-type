@@ -42,11 +42,13 @@
 @include font-face('MyMyanmar Universal', 'MyMyanmarUniversal', 'MyMyanmarUniversal');
 @include font-face('Padauk', 'Padauk', 'Padauk');
 @include font-face('Padauk', 'Padauk-Bold', 'Padauk', 'bold');
+@include font-face('Parabaik', 'Parabaik', 'Parabaik');
 @include font-face('Pyidaungsu', 'Pyidaungsu', 'Pyidaungsu');
 @include font-face('Noto Sans Myanmar', 'NotoSansMyanmar-Regular', 'NotoSansMyanmar');
 @include font-face('Noto Sans Myanmar', 'NotoSansMyanmar-Bold', 'NotoSansMyanmar', 'bold');
 @include font-face('Ours-Unicode', 'Ours-Unicode', 'Ours-Unicode');
 @include font-face('Tharlon', 'Tharlon', 'Tharlon');
 @include font-face('ThanLwin', 'ThanLwin', 'ThanLwin');
-@include font-face('ThanLwin Fixed', 'ThanLwin Fixed', 'ThanLwin Fixed');
-@include font-face('ThanLwin Light', 'ThanLwin Light', 'ThanLwin Light');
+@include font-face('ThanLwin', 'ThanLwin-Bold', 'ThanLwin', 'bold');
+@include font-face('ThanLwin Fixed', 'ThanLwinFixed', 'ThanLwinFixed');
+@include font-face('ThanLwin Light', 'ThanLwinLight', 'ThanLwinLight');
