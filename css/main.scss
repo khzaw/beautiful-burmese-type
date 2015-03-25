@@ -198,8 +198,25 @@ footer { padding: 50px; text-align: center;
       }
     }
 
+  &#poem-2 {
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url('../img/emo_cave.jpeg');
+    padding: 200px 0;
+    background-size: cover;
+
+    .text {
+      max-width: $content-width;
+      margin: 0 auto;
+      font: 48px/1.7 'Myanmar Pixel Smooth';
+      color: #eee;
+    }
+  }
+
   &#nyan-g-shin {
-    background: #ef4723;
+    background: #F15A24;
     padding: 0 0 200px 0;
 
     .text {
@@ -230,8 +247,6 @@ footer { padding: 50px; text-align: center;
       }
     }
 
-  &#poem-2 {
-  }
 
   &#j-me {
     background-image: linear-gradient(
@@ -334,7 +349,14 @@ footer { padding: 50px; text-align: center;
       margin: 0 auto;
       font: 36px/1.8 'Myanmar Njaun';
       margin-right: 10%;
+      p:nth-child(2) {
+        margin-top: 50px;
       }
+      .moe {
+        color: #DECDB9;
+      }
+
+    }
   }
 
   &#equal-rights {
