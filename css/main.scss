@@ -108,22 +108,19 @@ footer { padding: 50px; text-align: center;
     .text {
       margin: 0 auto;
       padding: 0 20px;
-      font-family: 'Myanmar Sans Pro', serif;
       max-width: $content-width;
 
       h3 {
         color: #e9e9eb;
-        font-size: 56px;
-        line-height: 1.6;
         margin: 0 0 40px 0;
         text-align: left;
         text-indent: -10px;
+        font: 60px/1.6 'Myanmar Sagar';
       }
 
       p {
         color: #e9e9eb;
-        font-size: 36px;
-        line-height: 2.0;
+        font: 48px/2.0 'Myanmar Angoun';
 
       }
     }
@@ -141,10 +138,9 @@ footer { padding: 50px; text-align: center;
       padding: 0 20px;
 
       p {
-        font: 84px/1.8 'Noto Sans Myanmar';
+        font:  84px/1.8 'Noto Sans Myanmar';
         color: #fff;
         margin: 0 0 20px 0;
-        text-indent: -9px;
         }
       }
     }
@@ -209,7 +205,7 @@ footer { padding: 50px; text-align: center;
     .text {
       max-width: $content-width;
       margin: 0 auto;
-      font: 400 28px/1.7 'Myanmar Square Light';
+      font: 400 28px/1.7 'Myanmar Sagar';
       color: #222;
 
       h1 {
@@ -250,7 +246,7 @@ footer { padding: 50px; text-align: center;
       color: #efeaff;
       max-width: $content-width;
       margin: 0 auto;
-      font: 60px 'ThanLwin Fixed';
+      font: 60px 'Myanmar Sagar';
       text-align: center;
       line-height: 1.9;
 
