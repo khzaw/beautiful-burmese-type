@@ -10,7 +10,9 @@
         font-style: $style;
         }
         src: url($filepath + ".woff") format('woff'),
-             url($filepath + ".ttf")  format('truetype');
+             url($filepath + ".ttf")  format('truetype'),
+             url($filepath + ".woff2") format('woff2'),
+             url($filepath + ".svg") format('svg');
     }
 }
 

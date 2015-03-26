@@ -334,8 +334,8 @@ footer { padding: 50px; text-align: center;
 
   &#poem-4 {
     background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
     ),
     url('../img/rain.jpg');
     padding: 200px 0;
@@ -388,6 +388,23 @@ footer { padding: 50px; text-align: center;
 
 
   &#poem-5 {
+    background: #212221;
+    padding: 125px 180px;
+    .text {
+      max-width: $content-width;
+      margin: 0 auto;
+
+      h3 {
+        color: #886655;
+        font: 42px/1.8 'Myanmar Ponenyet';
+        letter-spacing: -1px;
+      }
+
+      p {
+        color: #9D9E9D;
+        font: 400 24px/1.8 'Pyidaungsu';
+      }
+    }
   }
 
 }
