@@ -120,7 +120,7 @@ footer { padding: 50px; text-align: center;
 
       p {
         color: #e9e9eb;
-        font: 48px/2.0 'Myanmar Angoun';
+        font: 32px/2.0 'Myanmar Angoun';
 
       }
     }
@@ -379,7 +379,7 @@ footer { padding: 50px; text-align: center;
 
           p {
               color: #fff;
-              font: 400 20px/1.8 'padauk';
+              font: 400 20px/1.8 'Masterpiece Uni Round';
               text-align: justify;
           }
       }
@@ -402,7 +402,22 @@ footer { padding: 50px; text-align: center;
 
       p {
         color: #9D9E9D;
-        font: 400 24px/1.8 'Pyidaungsu';
+        font: 400 24px/1.8 'Cherry Unicode';
+      }
+    }
+  }
+
+  &#ayelinhtut {
+    background: #00409A;
+    padding: 125px 180px;
+    .text {
+      max-width: $content-width;
+      margin: 0 auto;
+
+      p {
+        color: #E7E9E6;
+        font: 400 24px/1.8 'padauk';
+        text-shadow: 1px 1px 1px #333;
       }
     }
   }
