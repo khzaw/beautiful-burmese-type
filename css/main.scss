@@ -422,4 +422,31 @@ footer { padding: 50px; text-align: center;
     }
   }
 
+  &#waitzar {
+      background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+      ),
+      url('../img/evening.jpg');
+      padding: 300px 0;
+      background-size: cover;
+
+    .text {
+      max-width: $content-width;
+      margin: 0 auto;
+      
+      p {
+        .first-word {
+          float: left;
+          color: #DE372F;
+          font: 75px/60px 'NKSSmart3';
+          padding: 4px 8px 12px 3px;
+        }
+
+        color: #eee;
+        font: 24px/1.85 'Pyidaungsu';
+      }
+    }
+  }
+
 }
