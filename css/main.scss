@@ -408,16 +408,28 @@ footer { padding: 50px; text-align: center;
   }
 
   &#ayelinhtut {
-    background: #00409A;
+    background: #FCFAF2;
     padding: 125px 180px;
     .text {
       max-width: $content-width;
       margin: 0 auto;
 
-      p {
-        color: #E7E9E6;
-        font: 400 24px/1.8 'padauk';
-        text-shadow: 1px 1px 1px #333;
+      .first {
+        color: #333;
+        font: 400 24px/1.8 'NKSSmart2';
+        //text-shadow: 1px 1px 1px #333;
+      }
+
+      .second {
+        font: 24px/1.8 'NKSSmart3';
+      }
+
+      .third {
+        font: 24px/1.8 'Kamjing-2';
+      }
+
+      .fourth {
+        font: 24px/1.8 'Noto Sans Myanmar UI';
       }
     }
   }

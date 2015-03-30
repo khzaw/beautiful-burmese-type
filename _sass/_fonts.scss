@@ -11,7 +11,6 @@
         }
         src: url($filepath + ".woff") format('woff'),
              url($filepath + ".ttf")  format('truetype'),
-             url($filepath + ".woff2") format('woff2'),
              url($filepath + ".svg") format('svg');
     }
 }
@@ -22,6 +21,7 @@
 @include font-face('CharisSIL', 'CharisSIL-BI', 'CharisSIL', 'bold', 'italic');
 
 @include font-face('Cherry Unicode', 'CherryUnicode', 'CherryUnicode');
+@include font-face('Kamjing-2', 'Kamjing-2', 'Kamjing-2');
 @include font-face('Masterpiece Uni Round', 'MasterpieceUniRound', 'MasterpieceUniRound');
 @include font-face('Masterpiece Uni Sans', 'MasterpieceUniSans', 'MasterpieceUniSans');
 @include font-face('MON3 Anonta', 'MON3Anonta1', 'MON3Anonta1');
@@ -46,13 +46,18 @@
 @include font-face('Myanmar Pauklay', 'MyanmarPauklay', 'MyanmarPauklay');
 @include font-face('Myanmar Yinmar', 'MyanmarYinmar', 'MyanmarYinmar');
 @include font-face('MyMyanmar Universal', 'MyMyanmarUniversal', 'MyMyanmarUniversal');
+@include font-face('NamKhoneUnicode', 'NamKhoneUnicode', 'NamKhoneUnicode');
+@include font-face('NKSSmart2', 'NKSSmart2', 'NKSSmart2');
 @include font-face('NKSSmart3', 'NKSSmart3', 'NKSSmart3');
+@include font-face('NKSSmart4', 'NKSSmart4', 'NKSSmart4');
 @include font-face('Padauk', 'Padauk', 'Padauk');
 @include font-face('Padauk', 'Padauk-Bold', 'Padauk', 'bold');
 @include font-face('Parabaik', 'Parabaik', 'Parabaik');
 @include font-face('Pyidaungsu', 'Pyidaungsu', 'Pyidaungsu');
 @include font-face('Noto Sans Myanmar', 'NotoSansMyanmar-Regular', 'NotoSansMyanmar');
 @include font-face('Noto Sans Myanmar', 'NotoSansMyanmar-Bold', 'NotoSansMyanmar', 'bold');
+@include font-face('Noto Sans Myanmar UI', 'NotoSansMyanmarUI', 'NotoSansMyanmarUI');
+@include font-face('Noto Sans Myanmar UI', 'NotoSansMyanmarUI-Bold', 'NotoSansMyanmarUI', 'bold');
 @include font-face('Ours-Unicode', 'Ours-Unicode', 'Ours-Unicode');
 @include font-face('Tharlon', 'Tharlon', 'Tharlon');
 @include font-face('ThanLwin', 'ThanLwin', 'ThanLwin');
