@@ -115,12 +115,12 @@ footer { padding: 50px; text-align: center;
         margin: 0 0 40px 0;
         text-align: left;
         text-indent: -10px;
-        font: 60px/1.6 'Myanmar Sagar';
+        font: 48px/1.6 'Myanmar Gantgaw';
       }
 
       p {
         color: #e9e9eb;
-        font: 32px/2.0 'Myanmar Angoun';
+        font: 24px/2.0 'Padauk-Regular';
 
       }
     }
@@ -138,7 +138,7 @@ footer { padding: 50px; text-align: center;
       padding: 0 20px;
 
       p {
-        font:  84px/1.8 'Noto Sans Myanmar';
+        font:  72px/1.8 'Noto Sans Myanmar';
         color: #fff;
         margin: 0 0 20px 0;
         }
@@ -192,7 +192,7 @@ footer { padding: 50px; text-align: center;
         -webkit-column-count: 2;
         -webkit-column-gap: 50px;
         p {
-          
+
           }
         }
       }
@@ -210,7 +210,7 @@ footer { padding: 50px; text-align: center;
     .text {
       max-width: $content-width;
       margin: 0 auto;
-      font: 48px/1.7 'Myanmar Pixel Smooth';
+      font: 36px/1.6 'Myanmar Pixel Smooth';
       color: #eee;
     }
   }
@@ -347,7 +347,7 @@ footer { padding: 50px; text-align: center;
       text-align: right;
       max-width: $content-width;
       margin: 0 auto;
-      font: 36px/1.8 'Myanmar Njaun';
+      font: 30px/1.6 'Myanmar Njaun';
       margin-right: 10%;
       p:nth-child(2) {
         margin-top: 50px;
@@ -370,20 +370,20 @@ footer { padding: 50px; text-align: center;
 
           h3 {
               color: #fff;
-              font-size: 68px;
+              font-size: 60px;
               line-height: 1.6;
               margin: 0 0 30px 0;
               font-family: 'Myanmar Pauklay', serif;
-              
+
           }
 
           p {
               color: #fff;
-              font: 400 20px/1.8 'Masterpiece Uni Round';
+              font: 400 18px/1.8 'Masterpiece Uni Round';
               text-align: justify;
           }
       }
-      
+
   }
 
 
@@ -446,12 +446,12 @@ footer { padding: 50px; text-align: center;
     .text {
       max-width: $content-width;
       margin: 0 auto;
-      
+
       p {
         .first-word {
           float: left;
           color: #DE372F;
-          font: 75px/60px 'Noto Sans Myanmar UI';
+          font: 75px/60px 'Kamjing-2';
           padding: 4px 8px 12px 3px;
         }
 
