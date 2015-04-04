@@ -359,12 +359,11 @@ footer { padding: 50px; text-align: center;
     }
   }
 
-  &#equal-rights {
+  &#myat-noe-wai {
       background: #000;
       padding: 125px 180px;
       .text {
           max-width: $content-width;
-          text-align: center;
           margin: 0 auto;
           padding: 0 20px;
 
@@ -374,13 +373,14 @@ footer { padding: 50px; text-align: center;
               line-height: 1.6;
               margin: 0 0 30px 0;
               font-family: 'Myanmar Pauklay', serif;
+              text-align: center;
 
           }
 
           p {
               color: #fff;
               font: 400 18px/1.8 'Masterpiece Uni Round';
-              text-align: justify;
+              // text-align: justify;
           }
       }
 
