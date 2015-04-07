@@ -101,6 +101,21 @@ footer { padding: 50px; text-align: center;
     padding: 125px 0 250px 0;
     }
 
+  &#pangram {
+    padding: 250px 0;
+
+    .text {
+      margin: 0 auto;
+      max-width: $content-width;
+
+      p {
+        font: 36px/1.6 'NKSSmart4';
+        }
+      
+      }
+    
+    }
+
   &#poem-1 {
     background: #2A2C39;
     padding: 250px 0;
