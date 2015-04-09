@@ -422,14 +422,14 @@ footer { padding: 50px; text-align: center;
               font-size: 60px;
               line-height: 1.6;
               margin: 0 0 30px 0;
-              font-family: 'Myanmar Pauklay', serif;
+              font-family: 'Kamjing-2', serif;
               text-align: left;
 
           }
 
           p {
               color: #fff;
-              font: 400 18px/2.0 'Masterpiece Uni Sans';
+              font: 18px/2.0 'Masterpiece Uni Round';
           }
       }
 
@@ -450,7 +450,7 @@ footer { padding: 50px; text-align: center;
 
       p {
         color: #9D9E9D;
-        font: 400 24px/1.8 'Cherry Unicode';
+        font: 400 24px/1.8 'Parabaik';
       }
     }
   }
@@ -462,21 +462,13 @@ footer { padding: 50px; text-align: center;
       max-width: $content-width;
       margin: 0 auto;
 
-      .first {
+      .first, .second {
         color: #333;
-        font: 400 24px/1.8 'NKSSmart2';
+        font: 400 24px/1.8 'NKSSmart3';
         //text-shadow: 1px 1px 1px #333;
       }
 
-      .second {
-        font: 24px/1.8 'NKSSmart3';
-      }
-
-      .third {
-        font: 24px/1.8 'Kamjing-2';
-      }
-
-      .fourth {
+      .third, .fourth {
         font: 24px/1.8 'Noto Sans Myanmar UI';
       }
     }
