@@ -106,15 +106,46 @@ footer { padding: 50px; text-align: center;
     }
 
   &#pangram {
-    padding: 250px 0;
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url('../img/pangram-bg.jpg');
+    padding: 6em 0.5em;
 
     .text {
       margin: 0 auto;
       max-width: $content-width;
 
       p {
-        font: 36px/1.6 'NKSSmart4';
-        padding-top: 3px;
+        font: 24px/1.7 'NKSSmart4', 'Cherry Unicode';
+        letter-spacing: -1px;
+        color: #eee;
+
+          &:nth-child(1) {
+            text-indent: 10%;
+          }
+          &:nth-child(2) {
+            text-indent: 15%;
+          }
+          &:nth-child(3) {
+            text-indent: 20%;
+          }
+          &:nth-child(4) {
+            text-indent: 25%;
+          }
+          &:nth-child(5) {
+            text-indent: 30%;
+          }
+          &:nth-child(6) {
+            text-indent: 35%;
+          }
+          &:nth-child(7) {
+            text-indent: 40%;
+          }
+          &:nth-child(8) {
+            text-indent: 45%;
+          }
         }
 
       }
@@ -329,7 +360,7 @@ footer { padding: 50px; text-align: center;
 
       li {
         color: #fff;
-        font: 100 84px/1.7 'ThanLwin Light';
+        font: 100 84px/1.7 'ThanLwin Light', 'ThanLwin';
         letter-spacing: 2px;
 
         &:nth-child(1) {
