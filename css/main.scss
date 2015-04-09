@@ -180,7 +180,7 @@ footer { padding: 50px; text-align: center;
 
   &#sai-sai {
     background: #000;
-    padding: 300px 0;
+    padding: 12rem 0;
 
     .text {
       max-width: $content-width;
@@ -189,7 +189,7 @@ footer { padding: 50px; text-align: center;
       padding: 0 20px;
 
       p {
-        font:  72px/1.8 'Noto Sans Myanmar';
+        font:  48px/1.8 'Noto Sans Myanmar';
         color: #fff;
         margin: 0 0 20px 0;
         }
@@ -510,6 +510,17 @@ footer { padding: 50px; text-align: center;
         text-align: justify;
       }
     }
+
+    &#sai-sai {
+      p {
+        font-size: 72px !important;
+      }
+    }
   }
+
+  .mobile-break {
+    display: none;
+  }
+
 
 }
