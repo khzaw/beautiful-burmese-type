@@ -22,12 +22,16 @@ $grey-color-dark:  darken($grey-color, 25%);
 $content-width:    800px;
 $content-height:    800px;
 
+$on-laptop:    800px;
 $on-palm:          600px;
-$on-laptop:        800px;
 
 
 // footer
 $footer-color: #555;
+
+$break-small: 320px;
+$break-medium: 768px;
+$break-large: 1200px;
 
 
 // Using media queries with like this:
@@ -263,7 +267,6 @@ footer { padding: 50px; text-align: center;
       }
     }
 
-
   &#j-me {
     background-image: linear-gradient(
     rgba(0, 0, 0, 0.5),
@@ -377,7 +380,7 @@ footer { padding: 50px; text-align: center;
 
   &#myat-noe-wai {
       background: #000;
-      padding: 125px 180px;
+      padding: 2rem 0;
       .text {
           max-width: $content-width;
           margin: 0 auto;
@@ -389,19 +392,17 @@ footer { padding: 50px; text-align: center;
               line-height: 1.6;
               margin: 0 0 30px 0;
               font-family: 'Myanmar Pauklay', serif;
-              text-align: center;
+              text-align: left;
 
           }
 
           p {
               color: #fff;
-              font: 400 18px/1.8 'Masterpiece Uni Round';
-              // text-align: justify;
+              font: 400 18px/2.0 'Masterpiece Uni Sans';
           }
       }
 
   }
-
 
   &#poem-5 {
     background: #212221;
@@ -473,6 +474,17 @@ footer { padding: 50px; text-align: center;
 
         color: #eee;
         font: 24px/1.85 'Pyidaungsu';
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: $on-palm) {
+  .page {
+    &#myat-noe-wai {
+      p {
+        text-align: justify;
       }
     }
   }
