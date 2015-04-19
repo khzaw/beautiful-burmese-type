@@ -123,34 +123,56 @@ footer { padding: 50px; text-align: center;
         color: #eee;
 
           &:nth-child(1) {
+            text-indent: 5%;
+          }
+
+          &:nth-child(2) {
             text-indent: 10%;
           }
-          &:nth-child(2) {
+          &:nth-child(3) {
             text-indent: 15%;
           }
-          &:nth-child(3) {
+          &:nth-child(4) {
             text-indent: 20%;
           }
-          &:nth-child(4) {
+          &:nth-child(5) {
             text-indent: 25%;
           }
-          &:nth-child(5) {
+          &:nth-child(6) {
             text-indent: 30%;
           }
-          &:nth-child(6) {
+          &:nth-child(7) {
             text-indent: 35%;
           }
-          &:nth-child(7) {
-            text-indent: 40%;
-          }
           &:nth-child(8) {
-            text-indent: 45%;
+            text-indent: 40%;
           }
         }
 
       }
 
     }
+
+  &#linn-yar {
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url('../img/emo_cave.jpeg');
+    background-size: cover;
+    padding: 200px 0;
+    .text {
+      margin: 0 auto;
+      max-width: $content-width;
+      padding: 0 2em;
+      letter-spacing: 1px;
+      p {
+        color: #eee;
+        font: 24px/1.6 'Myanmar Pixel Smooth';
+      }
+
+    }
+  }
 
   &#poem-1 {
     background: #2A2C39;
@@ -254,14 +276,14 @@ footer { padding: 50px; text-align: center;
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
     ),
-    url('../img/emo_cave.jpeg');
+    url('../img/sea.jpg');
     padding: 200px 0;
     background-size: cover;
 
     .text {
       max-width: $content-width;
       margin: 0 auto;
-      font: 36px/1.6 'Myanmar Pixel Smooth';
+      font: 32px/1.6 'Myanmar Pixel Smooth';
       color: #eee;
     }
   }
@@ -360,7 +382,7 @@ footer { padding: 50px; text-align: center;
 
       li {
         color: #fff;
-        font: 100 84px/1.7 'ThanLwin Light', 'ThanLwin';
+        font: 100 60px/1.7 'ThanLwin Light', 'ThanLwin';
         letter-spacing: 2px;
 
         &:nth-child(1) {
