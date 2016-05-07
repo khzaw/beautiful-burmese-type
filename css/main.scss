@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: "helvetica neue", helvetica, arial, sans-serif;
+$base-font-family: "Unica One", "Helvetica Neue Light", helvetica, arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -23,7 +23,7 @@ $content-width:    800px;
 $content-height:    800px;
 
 $on-laptop:    800px;
-$on-palm:          600px;
+$on-palm:      600px;
 
 
 // footer
@@ -56,42 +56,31 @@ $break-large: 1200px;
         "fonts"
 ;
 
-html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  }
-
-html, body, * {
+* {
   -webkit-font-feature-settings: "kern" 1, "liga" 1, "clig" 1;
   -ms-font-feature-settings: "kern" 1, "liga" 1, "clig" 1, "locl";
   -moz-font-feature-settings: "kern" 1, "liga" 1, "clig" 1;
   font-feature-settings: "kern" 1, "liga" 1, "clig" 1, "locl";
-  }
-
-body {
-  background: #eaeaea;
   -webkit-text-size-adjust: 100%;
 }
+
 
 a {
   color: inherit;
   text-decoration: none;
 }
 
-footer { padding: 50px; text-align: center;
-
+footer {
+  padding: 50px;
+  text-align: center;
   p {
     color: $footer-color;
     font: 400 16px/1 'open sans';
     margin: 0 0 2em 0;
-
     a {
       color: $footer-color;
       font-weight: 700;
-
-      &:hover {
-        color: #000;
-      }
+      &:hover { color: #000; }
     }
   }
 }
@@ -100,19 +89,25 @@ footer { padding: 50px; text-align: center;
 }
 
 .page {
-  padding: 20rem 0;
+  .text {
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: 15.625rem 0;
+  }
 
   &.title {
     background: #fff;
     padding: 125px 0 250px 0;
-    }
+  }
+
   small {
     display: block;
     text-align: right;
+    padding: 0 1.625em 1.625em 0;
+    color: #fff;
     a {
-      margin-right: 1.625em;
-      font: 1em/1 'Helvetica Neue', helvetica, arial, sans-serif;
       color: #fff;
+      text-decoration: none;
     }
   }
 
@@ -124,46 +119,25 @@ footer { padding: 50px; text-align: center;
     url('../img/pangram-bg.jpg');
 
     .text {
-      margin: 0 auto;
-      max-width: $content-width;
-
+      $font: 'NKSSmart4';
       p {
-        font: 24px/1.7 'NKSSmart4', 'Cherry Unicode';
+        font: 24px/1.7 $font;
         letter-spacing: -1px;
         color: #eee;
-
-          &:nth-child(1) {
-            text-indent: 5%;
-          }
-
-          &:nth-child(2) {
-            text-indent: 10%;
-          }
-          &:nth-child(3) {
-            text-indent: 15%;
-          }
-          &:nth-child(4) {
-            text-indent: 20%;
-          }
-          &:nth-child(5) {
-            text-indent: 25%;
-          }
-          &:nth-child(6) {
-            text-indent: 30%;
-          }
-          &:nth-child(7) {
-            text-indent: 35%;
-          }
-          &:nth-child(8) {
-            text-indent: 40%;
-          }
+          &:nth-child(1) { text-indent: 5%; }
+          &:nth-child(2) { text-indent: 10%; }
+          &:nth-child(3) { text-indent: 15%; }
+          &:nth-child(4) { text-indent: 20%; }
+          &:nth-child(5) { text-indent: 25%; }
+          &:nth-child(6) { text-indent: 30%; }
+          &:nth-child(7) { text-indent: 35%; }
+          &:nth-child(8) { text-indent: 40%; }
         }
-
       }
-
     }
 
   &#linn-yar {
+    $font: 'Myanmar Pixel Smooth';
     background-image: linear-gradient(
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
@@ -171,55 +145,40 @@ footer { padding: 50px; text-align: center;
     url('../img/emo_cave.jpeg');
     background-size: cover;
     .text {
-      margin: 0 auto;
-      max-width: $content-width;
-      padding: 0 2em;
       letter-spacing: 1px;
       p {
         color: #eee;
-        font: 24px/1.6 'Myanmar Pixel Smooth';
+        font: 24px/1.6 $font;
       }
 
     }
   }
 
   &#poem-1 {
+    $font1: 'Myanmar Gantgaw';
+    $font2: 'Padauk-Regular';
     background: #2A2C39;
-
     .text {
-      margin: 0 auto;
-      padding: 0 20px;
-      max-width: $content-width;
-
       h3 {
         color: #e9e9eb;
-        margin: 0 0 40px 0;
         text-align: left;
         text-indent: -10px;
-        font: 48px/1.6 'Myanmar Gantgaw';
+        font: 48px/1.6 $font1;
       }
-
       p {
         color: #e9e9eb;
-        font: 24px/2.0 'Padauk-Regular';
-
+        font: 24px/2.0 $font2;
       }
     }
-
   }
 
   &#sai-sai {
+    $font: 'Noto Sans Myanmar';
     background: #000;
-    padding: 12rem 0;
-
     .text {
-      max-width: $content-width;
       text-align: center;
-      margin: 0 auto;
-      padding: 0 20px;
-
       p {
-        font:  48px/1.8 'Noto Sans Myanmar';
+        font:  48px/1.8 $font;
         color: #fff;
         margin: 0 0 20px 0;
         }
@@ -227,40 +186,31 @@ footer { padding: 50px; text-align: center;
     }
 
   &#byu {
+    $font1: 'Ours-Unicode';
+    $font2: 'Myanmar Kuttar';
+    $font3: 'Myanmar Gantgaw';
     background: #fff;
-
     .text {
-      margin: 0 auto;
-      padding: 0 18px;
-      max-width: $content-width;
-      font: 400 18px/1.9 'Ours-Unicode';
-      position: relative;
-
+      font: 400 18px/1.9 $font1;
       h2 {
-          color: #222;
-          font: 400 60px/1.1 'Myanmar Kuttar';
-          margin: 0 0 36px 0;
-          text-align: center;
-          max-width: $content-width;
-
-          .author {
-            font: lighter 56px/1 'Myanmar Gantgaw';
-            position: relative;
-            top: -36px;
-            }
-          }
-
+        color: #222;
+        font: 400 60px/1.1 $font2;
+        margin: 0 0 36px 0;
+        text-align: center;
+        .author {
+          font: 56px/1 $font3;
+          position: relative;
+        }
+      }
       h3 {
         border-top: 1px solid #222;
         color: #222;
         margin: 0 0 50px 0;
         text-align: center;
-
         span {
-          font-family: 'Myanmar Gantgaw';
+          font-family: $font3;
           background: #fff;
           padding: 0 16px;
-          position: relative;
           top: -15px;
           letter-spacing: 3px;
           }
@@ -271,157 +221,118 @@ footer { padding: 50px; text-align: center;
         -moz-column-gap: 50px;
         -webkit-column-count: 2;
         -webkit-column-gap: 50px;
-        p {
-
-          }
         }
+      }
+      small, small a {
+        color: #222;
       }
     }
 
   &#poem-2 {
+    $font: 'Myanmar Angoun';
     background-image: linear-gradient(
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
     ),
     url('../img/sea.jpg');
     background-size: cover;
-
     .text {
-      max-width: $content-width;
-      margin: 0 auto;
-      font: 25px/1.6 'Myanmar Tagu';
-      color: #eee;
+      p {
+        font: 25px/2.0 $font;
+        color: #ddd;
+      }
     }
   }
 
   &#nyan-g-shin {
-    background: #F15A24;
-    padding: 0 0 200px 0;
-
+    $font1: 'Myanmar Sans Pro';
+    background: rgba(241, 90, 36, 1);
     .text {
-      max-width: $content-width;
-      margin: 0 auto;
-      font: 400 28px/1.7 'Myanmar Sagar';
+      font: 28px/2.0 $font1;
       color: #222;
-
-      h1 {
-        float: left;
-        padding: 200px 25px 0 0;
-        margin: 0 0px 0 0;
-        max-width: 240px;
-        text-align: right;
-        }
-
-      h2 {
-        border-left:8px solid #242526;
-        float: left;
-        padding: 200px 0 0 25px;
-        max-width: auto;
-        }
       p {
-        clear: left;
-        font-style: normal;
-        margin: 0 0 0 250px;
+        &:first-child {
+          float: left;
+          min-width: 240px;
+        }
+        &:nth-child(2) {
+          border-left:8px solid #242526;
+          margin-left: 240px;
+          padding-left: 2em;
         }
       }
+      .clearfix { clear: both; }
     }
+    small, small a { color: #222; }
+  }
 
   &#j-me {
+    $font: 'Myanmar Sagar';
     background-image: linear-gradient(
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
     ),
     url('../img/cloud.jpg');
     background-size: cover;
-
     .text {
       color: #efeaff;
-      max-width: $content-width;
-      margin: 0 auto;
-      font: 60px 'Myanmar Sagar';
+      font: 60px/1.9 $font;
       text-align: center;
-      line-height: 1.9;
-
-      span {
-        // font: 50px 'Ours-Unicode';
-        }
       }
     }
 
   &#poem-3 {
+    $font1: 'Myanmar Njaun';
+    $font2: 'Myanmar Sabae';
     background: #ffffff;
     .text {
-      max-width: $content-width;
       text-align: right;
-      margin: 0 auto;
-      h3 {
-        font-family: 'Myanmar Njaun';
+      .title {
+        font: 84px/1.4 $font1;
         color: #CC3311;
-        font-size: 84px;
-        line-height: 1.4;
         margin: 0 0 20px 0;
         text-indent: -10px;
       }
-
       p {
         color: #333;
         margin: 0 0 10px 0;
-        line-height: 2;
-        font: 36px/2 'Myanmar Sabae';
+        font: 36px/2 $font2;
         letter-spacing: 1px;
-        //text-indent: -6px;
       }
     }
- }
+    small, small a { color: #cc3311; }
+   }
 
   &#akwyin-mashi {
+    $font: 'ThanLwin Light', 'ThanLwin';
     background: #4e081b;
-
     .text {
-      margin: 0 auto;
-      padding: 0 20px;
-      text-align: left;
-      max-width: $content-width;
-
       li {
         color: #fff;
-        font: 100 60px/1.7 'ThanLwin Light', 'ThanLwin';
+        font: 100 60px/1.7 $font;
         letter-spacing: 2px;
-
-        &:nth-child(1) {
-          opacity: 0.2;
-          }
-        &:nth-child(2) {
-          opacity: 0.4;
-          }
-        &:nth-child(3) {
-          opacity: 0.6;
-          }
-        &:nth-child(4) {
-          opacity: 0.8;
-          }
-        &:nth-child(5) {
-          opacity: 1;
-          }
-        }
-}
+        &:nth-child(1) { opacity: 0.2; }
+        &:nth-child(2) { opacity: 0.4; }
+        &:nth-child(3) { opacity: 0.6; }
+        &:nth-child(4) { opacity: 0.8; }
+        &:nth-child(5) { opacity: 1; }
+      }
     }
+  }
 
   &#poem-4 {
+    $font: 'Myanmar HeadOne';
     background-image: linear-gradient(
     rgba(0, 0, 0, 0.3),
     rgba(0, 0, 0, 0.3)
     ),
-    url('../img/rain.jpg');
+    url('../img/girl.jpeg');
     background-size: cover;
-
 
     .text {
       color: #efeaff;
       text-align: right;
-      max-width: $content-width;
-      margin: 0 auto;
-      font: 30px/1.6 'Myanmar Njaun';
+      font: 30px/1.8 $font;
       margin-right: 10%;
       p:nth-child(2) {
         margin-top: 50px;
@@ -433,66 +344,34 @@ footer { padding: 50px; text-align: center;
     }
   }
 
-  &#myat-noe-wai {
-      background: #000;
-      .text {
-          max-width: $content-width;
-          margin: 0 auto;
-          padding: 0 20px;
-
-          h3 {
-              color: #fff;
-              font-size: 60px;
-              line-height: 1.6;
-              margin: 0 0 30px 0;
-              font-family: 'Kamjing-2', serif;
-              text-align: left;
-
-          }
-
-          p {
-              color: #fff;
-              font: 18px/2.0 'Masterpiece Uni Round';
-          }
-      }
-
-  }
-
   &#poem-5 {
-    background: #212221;
-    padding: 125px 180px;
-    .text {
-      max-width: $content-width;
-      margin: 0 auto;
+    $font1: 'Myanmar Ponenyet';
+    $font2: 'Myanmar Text';
 
+    background: #212221;
+    .text {
       h3 {
         color: #886655;
-        font: 42px/1.8 'Myanmar Ponenyet';
-        letter-spacing: -1px;
+        font: 42px/1.8 $font1;
       }
-
       p {
         color: #9D9E9D;
-        font: 400 24px/1.8 'Parabaik';
+        font: 400 24px/2.0 $font2;
       }
     }
   }
 
   &#ayelinhtut {
-    background: #FCFAF2;
-    padding: 125px 180px;
+    $font: 'NKSSmart3';
+    background-image: linear-gradient(
+    rgba(0,0,0,0.3),
+    rgba(0,0,0,0.3)
+    ), url('../img/forest.jpg');
     .text {
-      max-width: $content-width;
-      margin: 0 auto;
-
-      .first, .second {
-        color: #333;
-        font: 400 24px/1.8 'NKSSmart3';
-        //text-shadow: 1px 1px 1px #333;
-      }
-
-      .third, .fourth {
-        font: 24px/1.8 'Noto Sans Myanmar UI';
+      p {
+        color: #fff;
+        font: 24px/3.0 $font;
+        letter-spacing: 4px;
       }
     }
   }
@@ -507,9 +386,6 @@ footer { padding: 50px; text-align: center;
       background-size: cover;
 
     .text {
-      max-width: $content-width;
-      margin: 0 auto;
-
       p {
         .first-word {
           float: left;
@@ -524,26 +400,41 @@ footer { padding: 50px; text-align: center;
     }
   }
 
+  &#song {
+    $font: 'Myanmar Pauklay';
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+    ),
+    url('../img/evening.jpg');
+    background-size: cover;
+    .text {
+      max-height: 10rem;
+      p {
+        font: 26px $font;
+        letter-spacing: 5px;
+        text-indent: 50px;
+        color: #eee;
+        &.second {
+          text-indent: 65px;
+        }
+      }
+    }
+  }
+  small, small a { color: #eee; }
 }
 
 @media screen and (min-width: $on-palm) {
   .page {
-    &#myat-noe-wai {
-      p {
-        text-align: justify;
-      }
-    }
-
     &#sai-sai {
-      p {
-        font-size: 72px !important;
+      p { font-size: 72px !important; }
+    }
+    &#byu {
+      .author {
+        top: -50px;
+        left: -10px;
       }
     }
   }
-
-  .mobile-break {
-    display: none;
-  }
-
-
+  .mobile-break { display: none; }
 }
