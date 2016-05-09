@@ -11,14 +11,10 @@
         }
         src: url($filepath + ".woff") format('woff'),
              url($filepath + ".ttf")  format('truetype'),
-             url($filepath + ".svg") format('svg');
+             url($filepath + ".svg#" + $style-name) format('svg');
     }
 }
 
-@include font-face('CharisSIL', 'CharisSIL-R', 'CharisSIL');
-@include font-face('CharisSIL', 'CharisSIL-I', 'CharisSIL', '', 'italic');
-@include font-face('CharisSIL', 'CharisSIL-B', 'CharisSIL', 'bold');
-@include font-face('CharisSIL', 'CharisSIL-BI', 'CharisSIL', 'bold', 'italic');
 
 @include font-face('Cherry Unicode', 'CherryUnicode', 'CherryUnicode');
 @include font-face('Kamjing-2', 'Kamjing-2', 'Kamjing-2');
@@ -49,6 +45,7 @@
 @include font-face('Myanmar Sangam MN', 'MyanmarSangamMN', 'MyanmarSangamMN');
 @include font-face('Myanmar Sans Pro', 'MyanmarSansProRegular', 'MyanmarSansProRegular');
 @include font-face('Myanmar Tagu', 'MyanmarTagu', 'MyanmarTagu');
+@include font-face('Myanmar Text', 'MyanmarText', 'MyanmarText');
 @include font-face('Myanmar Pauklay', 'MyanmarPauklay', 'MyanmarPauklay');
 @include font-face('Myanmar Yinmar', 'MyanmarYinmar', 'MyanmarYinmar');
 @include font-face('MyMyanmar Universal', 'MyMyanmarUniversal', 'MyMyanmarUniversal');
