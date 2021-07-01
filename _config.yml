@@ -1,7 +1,7 @@
 # Site settings
 title: Beautiful Burmese Typography
-email: emoosx@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
+email: kayhzaw@gmail.com
+description: >
   Beautiful Burmese Typography
 baseurl: "/beautiful-burmese-type/" # the subpath of your site, e.g. /blog/
 twitter_username: khzaw
