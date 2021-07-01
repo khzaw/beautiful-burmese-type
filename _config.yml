@@ -4,7 +4,6 @@ email: emoosx@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Beautiful Burmese Typography
 baseurl: "/beautiful-burmese-type/" # the subpath of your site, e.g. /blog/
-url: "http://kaunghtet.xyz"
 twitter_username: khzaw
 github_username:  khzaw
 
