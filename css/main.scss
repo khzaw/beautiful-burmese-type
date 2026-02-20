@@ -57,11 +57,7 @@ $break-large: 1200px;
 ;
 
 * {
-  -webkit-font-feature-settings: "kern" 1, "liga" 1, "clig" 1;
-  -ms-font-feature-settings: "kern" 1, "liga" 1, "clig" 1, "locl";
-  -moz-font-feature-settings: "kern" 1, "liga" 1, "clig" 1;
   font-feature-settings: "kern" 1, "liga" 1, "clig" 1, "locl";
-  -webkit-text-size-adjust: 100%;
 }
 
 
@@ -217,10 +213,8 @@ footer {
         }
 
       .excerpt {
-        -moz-column-count: 2;
-        -moz-column-gap: 50px;
-        -webkit-column-count: 2;
-        -webkit-column-gap: 50px;
+        column-count: 2;
+        column-gap: 50px;
         }
       }
       small, small a {

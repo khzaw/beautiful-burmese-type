@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="my">
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eaeaea">
 
     <title>Beautiful Burmese Typefaces</title>
-    <meta name="description" content="Beautiful Burmese Typefaces">
+    <meta name="description" content="A typography project showcasing beautiful burmese typefaces">
     <meta property="og:title" content="Beautiful Burmese Typefaces" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="http://kaunghtet.xyz/beautiful-burmese-type/img/cover.png" />
-    <meta property="og:url" content="http://kaunghtet.xyz/beautiful-burmese-type/" />
+    <meta property="og:image" content="https://khzaw.github.io/beautiful-burmese-type/img/cover.png" />
+    <meta property="og:url" content="https://khzaw.github.io/beautiful-burmese-type/" />
     <meta property="og:description" content="A typography project showcasing beautiful burmese typefaces" />
     <meta property="og:site_name" content="Beautiful Burmese Typefaces" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Beautiful Burmese Typefaces" />
+    <meta name="twitter:description" content="A typography project showcasing beautiful burmese typefaces" />
+    <meta name="twitter:image" content="https://khzaw.github.io/beautiful-burmese-type/img/cover.png" />
 
     <link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="http://kaunghtet.xyz/beautiful-burmese-type/">
-    <link href='https://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
+    <link rel="canonical" href="https://khzaw.github.io/beautiful-burmese-type/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="{{ "img/favicon.ico" | prepend: site.baseurl }}">
-    <script src="{{ "js/jquery.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "js/jquery.mymr.js" | prepend: site.baseurl }}"></script>
   </head>
 
   <body>
@@ -28,19 +32,30 @@
       {{ content }}
     </section>
 
-
     {% include footer.html %}
     <script>
-      $('container').find('p').mymrSyllBreak('my');
-    </script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-85357776-2', 'auto');
-      ga('send', 'pageview');
+      (function() {
+        function mymrSyllBreak(el) {
+          var paragraphs = el.querySelectorAll('p');
+          paragraphs.forEach(function(p) {
+            var html = p.innerHTML;
+            // Unicode 5.1 to 5.2 normalization
+            html = html.replace(/(\u103A)(\u1037)/g, '$2$1');
+            // Insert ZWSP before consonants and independent vowels
+            html = html.replace(/([က-အဣ-ဧဩဪဿ၌-၏])/g, '\u200B$1');
+            // Suppress unwanted breakpoints
+            html = html.replace(/([\u0009-\u000d\u0020\u00a0\u2000-\u200a\u2028\u2029\u202f]|>|\u201C|\u2018|\-|\(|\[|{|[\u2012-\u2014]|\u1039)\u200B([\u1000-\u1021])/g, '$1$2');
+            html = html.replace(/\u200B(\u1004\u103A\u1039)/g, '$1');
+            html = html.replace(/\u200B([က-အ]\u103A)/g, '$1');
+            html = html.replace(/(\s|\n)\u200B([က-အဣ-ဧဩဪဿ၌-၏])/g, '$1$2');
+            html = html.replace(/([က-အ])\u200B([က-အ])/g, '$1$2');
+            html = html.replace(/(>)[\u200B]/g, '$1');
+            p.innerHTML = html;
+          });
+        }
+        var container = document.getElementById('container');
+        if (container) mymrSyllBreak(container);
+      })();
     </script>
   </body>
 
